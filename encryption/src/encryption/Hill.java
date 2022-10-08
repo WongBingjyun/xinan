@@ -61,11 +61,6 @@ public class Hill {
                 System.out.print(" ");
             }
         }
-    }
-
-    public static void main(String[] args)
-    {
-        Hill hill = new Hill();
-        hill.encrypt();
+        System.out.println();
     }
 }

@@ -98,13 +98,6 @@ public class Playfair {
                 System.out.print(matrix[l1][r2] + "" + matrix[l2][r1] + " ");
             }
         }
+        System.out.println();
     }
-
-    public static void main(String[] args) {
-
-        Playfair playfair = new Playfair();
-        playfair.encrypt();
-
-    }
-
 }
