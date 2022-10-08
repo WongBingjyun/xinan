@@ -62,5 +62,10 @@ public class Hill {
             }
         }
         System.out.println();
+        Count count;
+        System.out.println("明文字符统计：");
+        count = new Count(plaintext);
+        System.out.println("密文字符统计：");
+        count = new Count(ciphertext);
     }
 }

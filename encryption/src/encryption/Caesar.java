@@ -1,7 +1,5 @@
 package encryption;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 import java.util.Scanner;
 
 public class Caesar {
@@ -14,21 +12,31 @@ public class Caesar {
         System.out.print("密文为：");
         char plaintext[] = text.toCharArray();
         char ciphertext;
-        for (int i = 0; i < plaintext .length; i++) {
+        String ciphertext1 = "";
+        for (int i = 0; i < plaintext.length; i++) {
             if (plaintext[i] >= 'a' && 'z' >= plaintext[i]) {
                 ciphertext = (char) ((int) 'a' + ((int) plaintext[i] - (int) 'a' + key) % 26);
                 System.out.print(ciphertext);
+                ciphertext1 += ciphertext;
             } else if (plaintext[i] >= 'A' && plaintext[i] <= 'Z') {
                 ciphertext = (char) ((int) 'A' + ((int) plaintext[i] - (int) 'A' + key) % 26);
                 System.out.print(ciphertext);
+                ciphertext1 += ciphertext;
             } else if (plaintext[i] >= '0' && plaintext[i] <= '9') {
                 ciphertext = (char) ((int) '0' + ((int) plaintext[i] - (int) '0' + key) % 10);
                 System.out.print(ciphertext);
+                ciphertext1 += ciphertext;
             } else {
                 System.out.print(plaintext[i]);
+                ciphertext1 += plaintext[i];
             }
         }
         System.out.println();
+        Count count;
+        System.out.println("明文字符统计：");
+        count = new Count(text);
+        System.out.println("密文字符统计：");
+        count = new Count(ciphertext1);
     }
 
     public void decrypt() {

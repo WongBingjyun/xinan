@@ -28,6 +28,7 @@ public class Playfair {
     }
 
     public void encrypt() {
+
         System.out.print("请输入密钥（只包含英文字母的字符串）: ");
         Scanner scanner = new Scanner(System.in);
         key = scanner.nextLine();
@@ -77,6 +78,7 @@ public class Playfair {
             list.add('K');
         }
 
+        String ciphertext = "";
         System.out.print("Playfair加密密文为: ");
         for (int i = 0; i < list.size(); i = i + 2) {
             char fir = list.get(i);
@@ -92,12 +94,20 @@ public class Playfair {
 
             if (l1 == l2) {
                 System.out.print(matrix[l1][(r1 + 1) % 5] + "" + matrix[l2][(r2 + 1) % 5] + " ");
+                ciphertext = ciphertext + matrix[l1][(r1 + 1) % 5] + matrix[l2][(r2 + 1) % 5];
             } else if (r1 == r2) {
                 System.out.print(matrix[(l1 + 1) % 5][r1] + "" + matrix[(l2 + 1) % 5][r2] + " ");
+                ciphertext = ciphertext + matrix[(l1 + 1) % 5][r1] + matrix[(l2 + 1) % 5][r2];
             } else {
                 System.out.print(matrix[l1][r2] + "" + matrix[l2][r1] + " ");
+                ciphertext = ciphertext + matrix[l1][r2] + matrix[l2][r1];
             }
         }
         System.out.println();
+        Count count;
+        System.out.println("明文字符统计：");
+        count = new Count(plaintext);
+        System.out.println("密文字符统计：");
+        count = new Count(ciphertext);
     }
 }
