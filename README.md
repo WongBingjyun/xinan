@@ -22,20 +22,21 @@
 
 #### Xor算法
 
-[README](Xor\README.md )
+[README](Xor/README.md )
 
-[源代码](Xor\src\Xor\Xor.java)
+[源代码](Xor/src/Xor/Xor.java)
 
 [xor](file:///Xor)
 
 #### 古典算法
 
-[README](encryption\README.md )
+[README](encryption/README.md )
 
 **源代码**
 
-[Caesar](encryption\src\encryption\Caesar.java )
+[Caesar](encryption/src/encryption/Caesar.java )
 
-[Playfair](encryption\src\encryption\Playfair.java )
+[Playfair](encryption/src/encryption/Playfair.java )
 
-[Hill](encryption\src\encryption\Hill.java)
+[Hill](encryption/src/encryption/Hill.java)
+
