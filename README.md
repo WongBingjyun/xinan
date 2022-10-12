@@ -26,7 +26,7 @@
 
 [源代码](Xor/src/Xor/Xor.java)
 
-[xor](file:///Xor)
+[xor](Xor)
 
 #### 古典算法
 
