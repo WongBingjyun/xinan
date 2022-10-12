@@ -6,7 +6,7 @@
 
 鼠标右键点击Git Gui here，打开图形界面
 
-界面.jpg
+image\界面.jpg
 
 rescan:刷新，stage changed: 提交交到暂存区，sign off:检查完成，commit:提交到本地仓库，push:上传到远程服务器。
 在操作时依次点击即可将文件由 工作区 -> 暂存区->本地仓库->远程仓库 的上传操作。 
