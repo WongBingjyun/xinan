@@ -34,7 +34,7 @@ project：[xor](Xor)
 
 README：[README](encryption/README.md )
 
-project：[enpryption](enpryption)
+project：[encryption](encryption)
 
 **源代码**
 
