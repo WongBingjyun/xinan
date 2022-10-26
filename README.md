@@ -44,3 +44,13 @@ Playfair：[Playfair](encryption/src/encryption/Playfair.java )
 
 Hill：[Hill](encryption/src/encryption/Hill.java)
 
+
+
+### 第五次作业
+
+README:[DES](DES/README.md)
+
+源代码：[SBOX](DES/src/lesson/SBOX.java)     [DES](DES/src/lesson/DES.java)
+
+
+
